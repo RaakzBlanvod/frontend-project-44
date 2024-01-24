@@ -1,8 +1,8 @@
 /* eslint-disable */
-import readlineSync from '/Users/raakz/frontend-project-44/readline-sync/lib/readline-sync.js';
+import readlineSync from 'readline-sync';
 /* eslint-enable */
 
-export function greetUser() {
+export default function greetUser() {
   const name = readlineSync.question('May I have your name? ');
   /* eslint-disable */
   console.log(`Hello, ${name}!`);
