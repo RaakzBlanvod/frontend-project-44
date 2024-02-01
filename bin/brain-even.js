@@ -22,7 +22,7 @@ let mark = 0;
 
 for (let i = 1; i <= 3; i += 1) {
   const step = task();
-  console.log(`Qusestion: ${step[0]}`);
+  console.log(`Question: ${step[0]}`);
   const answer = readlineSync.question('Answer: ');
 
   if (answer === step[1]) {
