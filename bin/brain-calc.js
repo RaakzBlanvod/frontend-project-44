@@ -16,31 +16,30 @@ const task = () => {
   if (operators[i] === '+') {
     a = num1 + num2;
     return [`${num1} + ${num2}`, a];
-  } else if (operators[i] === '-') {
+  } if (operators[i] === '-') {
     a = num1 - num2;
     return [`${num1} - ${num2}`, a];
-  } else {
-    a = num1 * num2;
-    return [`${num1} * ${num2}`, a];
   }
+  a = num1 * num2;
+  return [`${num1} * ${num2}`, a];
 };
 
 let mark = 0;
 
 for (let i = 1; i <= 3; i += 1) {
-    const step = task();
-    console.log(`Question: ${step[0]}`);
-    const answer = readlineSync.question('Answer: ');
-    if (answer == step[1]) {
-      console.log('Correct!');
-      mark += 1;
-    } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${step[1]}`);
-      console.log(`Let's try again, ${userName}!`);
-      break;
-    }
+  const step = task();
+  console.log(`Question: ${step[0]}`);
+  const answer = readlineSync.question('Answer: ');
+  if (answer == step[1]) {
+    console.log('Correct!');
+    mark += 1;
+  } else {
+    console.log(`${answer} is wrong answer ;(. Correct answer was ${step[1]}`);
+    console.log(`Let's try again, ${userName}!`);
+    break;
   }
-  
-  if (mark === 3) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+}
+
+if (mark === 3) {
+  console.log(`Congratulations, ${userName}!`);
+}

@@ -15,3 +15,6 @@ lint-fix:
 
 brain-even:
 	node bin/brain-even
+
+brain-calc:
+	node bin/brain-calc
