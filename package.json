@@ -5,7 +5,11 @@
   "description": "[![Actions Status](https://github.com/RaakzBlanvod/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RaakzBlanvod/frontend-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/b40099be91c0bb433b3a/maintainability)](https://codeclimate.com/github/RaakzBlanvod/frontend-project-44/maintainability)",
   "main": "index.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-cals": "bin/brain-even.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progressions.js"
   },
   "scripts": {  
     "test": "echo \"Error: no test specified\" && exit 1"
