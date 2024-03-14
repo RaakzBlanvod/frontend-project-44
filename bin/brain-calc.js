@@ -3,7 +3,6 @@ import gameBody from '../src/gameBody.js';
 
 const description = 'What is the result of the expression?';
 
-console.log('What is the result of the expression?');
 
 const task = () => {
   const operand1 = Math.round(Math.random() * 10);
